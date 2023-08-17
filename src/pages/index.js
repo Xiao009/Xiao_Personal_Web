@@ -10,14 +10,6 @@ export default function Home() {
         <title>Xiao Space | Home</title>
         <meta name="keywords" content="xiao" />
       </Head>
-      <div className={styles.container}>
-        <h1 className={styles.title}>homepage</h1>
-        <p className={styles.text}>lollkjkkjljkljkj</p>
-        <p className={styles.text}>lollkjkkjljkljkj</p>
-        <Link href="/testcase">
-          <span className={styles.btn}>see more testcase</span>
-        </Link>
-      </div>
     </>
   );
 }
