@@ -19,30 +19,33 @@ import {
   Apps,
   ContactMail,
 } from "@mui/icons-material";
-// export default function Navbar() {
-//   return (
-//     <nav>
-//       <div className="logo">
-//         <Image src="/logo1.png" width={77} height={77} />
-//       </div>
-//       <Link href="/">Home </Link>
-//       <Link href="/about">About Me </Link>
-//       <Link href="/Hardware">Hardware </Link>
-//       <Link href="/Software">Software </Link>
-//     </nav>
-//   );
-// }
 
 export default function Navbar() {
   return (
-    <Box component={"nav"}>
-      <AppBar position="static" style={{ background: "#222" }}>
-        <Toolbar>
-          <IconButton>
-            <ArrowBack style={{ color: "tomato" }} />
-          </IconButton>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <>
+      <Box component="div">
+        {/* <Avatar src={avatar} alt="Xiao Zhong" /> */}
+        <Avatar>
+          <Image
+            src="/logo1.png" // Path to the image inside the public folder
+            alt="Xiao Zhong"
+            width={100} // Specify the width of the image
+            height={100} // Specify the height of the image
+          />
+        </Avatar>
+      </Box>
+      <Box component={"nav"}>
+        <AppBar position="static" style={{ background: "#222" }}>
+          <Toolbar>
+            <IconButton>
+              <ArrowBack style={{ color: "tomato" }} />
+            </IconButton>
+            <Typography variant="h5" style={{ color: "tan" }}>
+              Portfolio
+            </Typography>
+          </Toolbar>
+        </AppBar>
+      </Box>
+    </>
   );
 }
