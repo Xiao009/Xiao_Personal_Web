@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap");
 
 body {
   background: #f2f2f2;
@@ -18,7 +17,7 @@ nav {
   margin: 10px auto 80px;
   padding: 10px 0;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: flex-end;
   align-items: flex-end;
   border-bottom: 1px solid #ddd;
 }
@@ -37,9 +36,9 @@ footer {
   border-top: 1px solid #eaeaea;
 }
 .not-found {
-  text-align: center ;
+  text-align: center;
 }
-.not-found a{
+.not-found a {
   color: #4979ff;
   text-decoration: underline;
 }
