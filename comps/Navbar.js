@@ -34,18 +34,22 @@ const menuItems = [
   {
     listIcon: <Home />,
     listText: "Home",
+    listPath: "/",
   },
   {
     listIcon: <AssignmentInd />,
     listText: "Resume",
+    listPath: "/Resume",
   },
   {
     listIcon: <Apps />,
     listText: "Portfolio",
+    listPath: "/",
   },
   {
     listIcon: <ContactMail />,
     listText: "Contacts",
+    listPath: "/",
   },
 ];
 
@@ -86,6 +90,8 @@ export default function Navbar() {
                 color: "tan",
               },
             }}
+            component={Link}
+            href={lsItem.listPath}
           >
             <ListItemIcon>{lsItem.listIcon}</ListItemIcon>
             <ListItemText primary={lsItem.listText} />
