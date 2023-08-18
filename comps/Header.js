@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import avatar from "../public/images/avatar.png";
+import avatar from "../public/1.png";
 // import Particles from "react-tsparticles";     //missing the particle
 
 export default function Header() {

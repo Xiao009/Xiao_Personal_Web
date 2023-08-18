@@ -74,7 +74,7 @@ export default function Navbar() {
         }}
       >
         <Image
-          src="/images/avatar.png" // Path to the image inside the public folder
+          src="/1.png" // Path to the image inside the public folder
           alt="Xiao Zhong"
           width={100} // Specify the width of the image
           height={100} // Specify the height of the image
