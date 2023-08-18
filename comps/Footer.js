@@ -1,9 +1,9 @@
 import React from "react";
 import { styled } from "@mui/system";
 import { BottomNavigation, BottomNavigationAction } from "@mui/material";
-import Facebook from "@mui/icons-material/Facebook";
-import Twitter from "@mui/icons-material/Twitter";
+import LinkedIn from "@mui/icons-material/LinkedIn";
 import Instagram from "@mui/icons-material/Instagram";
+import Github from "@mui/icons-material/GitHub";
 
 const FooterContainer = styled("div")({
   display: "flex", // Use flex to align items horizontally
@@ -32,10 +32,18 @@ export default function Footer() {
   return (
     <FooterContainer>
       <Bottomformat>
-        <BottomNavigationAction style={{ padding: 0 }} icon={<Facebook />} />
+        <BottomNavigationAction
+          style={{ padding: 0 }}
+          icon={<LinkedIn />}
+          href="https://www.linkedin.com/in/xiao-zhong-6b8b34119/"
+        />
       </Bottomformat>
       <Bottomformat>
-        <BottomNavigationAction style={{ padding: 0 }} icon={<Twitter />} />
+        <BottomNavigationAction
+          style={{ padding: 0 }}
+          icon={<Github />}
+          href="https://github.com/Xiao009"
+        />
       </Bottomformat>
       <Bottomformat>
         <BottomNavigationAction style={{ padding: 0 }} icon={<Instagram />} />

@@ -3,6 +3,8 @@ import { styled, css } from "@mui/system";
 import { TextField, Typography, Grid, Box, Button } from "@mui/material";
 import EmptyLayout from "../../comps/EmptyLayout";
 import SendIcon from "@mui/icons-material/Send";
+import Particle from "../../comps/ParticleBg";
+import Navbar from "../../comps/Navbar";
 
 const inputStyles = css({
   "& label.Mui-focused": {
@@ -29,6 +31,7 @@ const Formbox = styled(Box)({
   left: "50%",
   transform: "translate(-50%, -50%)",
   position: "absolute",
+  // zIndex: 2, // Add a higher z-index
 });
 const InputField = styled(TextField)(inputStyles);
 
@@ -40,9 +43,15 @@ const StyledButton = styled(Button)(({ theme }) => ({
   },
 }));
 
+// const NavbarWithHigherZIndex = styled(Navbar)({
+//   zIndex: 3, // Adjust the zIndex to make it appear above the particle background
+// });
+
 export default function Contacts() {
   return (
     <EmptyLayout>
+      {/* <NavbarWithHigherZIndex />
+      <Particle style={{ zIndex: 1 }} /> */}
       <Box component="div" style={{ background: "#233", height: "100vh" }}>
         <Grid container justify="center">
           <Formbox component="form">
@@ -50,11 +59,11 @@ export default function Contacts() {
               variant="h5"
               style={{
                 color: "tomato",
-                textAlight: "center",
+                textAlign: "center",
                 textTransform: "uppercase",
               }}
             >
-              hire or contact me...
+              feel free to contact
             </Typography>
             <InputField
               fullWidth
@@ -76,10 +85,12 @@ export default function Contacts() {
             <br />
             <InputField
               fullWidth
-              label="Company Name"
+              label="Message"
               variant="outlined"
               margin="dense"
               size="medium"
+              multiline
+              rows={5} // Adjust the number of rows
               InputProps={{ style: { color: "white" } }}
             />
             <br />
