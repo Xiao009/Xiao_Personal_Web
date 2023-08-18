@@ -49,7 +49,7 @@ const menuItems = [
   {
     listIcon: <ContactMail />,
     listText: "Contacts",
-    listPath: "/",
+    listPath: "/Contacts",
   },
 ];
 
