@@ -46,7 +46,11 @@ export default function Footer() {
         />
       </Bottomformat>
       <Bottomformat>
-        <BottomNavigationAction style={{ padding: 0 }} icon={<Instagram />} />
+        <BottomNavigationAction
+          style={{ padding: 0 }}
+          icon={<Instagram />}
+          href="/https://www.instagram.com/supermic9/"
+        />
       </Bottomformat>
     </FooterContainer>
   );
