@@ -1,53 +1,92 @@
 import React from "react";
-import { styled } from "@mui/system";
-import { TextField, Typography, Grid, Button, Box } from "@mui/material";
+import { styled, css } from "@mui/system";
+import { TextField, Typography, Grid, Box, Button } from "@mui/material";
 import EmptyLayout from "../../comps/EmptyLayout";
+import SendIcon from "@mui/icons-material/Send";
 
-const InputField = styled(TextField)({
-  root: {
-    "& label.Mui-focused": {
-      color: "tomato",
+const inputStyles = css({
+  "& label.Mui-focused": {
+    color: "tomato",
+  },
+  "& label": {
+    color: "tan",
+  },
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": {
+      borderColor: "tan",
     },
-    "& label": {
-      color: "tan",
+    "&:hover fieldset": {
+      borderColor: "tan",
     },
-    "& .MuiOutlinedInput-root": {
-      "& fieldset": {
-        borderColor: "tan",
-      },
-      "&:hover fieldset": {
-        borderColor: "tan",
-      },
-      "& .Mui-focused fieldset": {
-        borderColor: "tan",
-      },
+    "&.Mui-focused fieldset": {
+      borderColor: "tan",
     },
   },
 });
 
+const Formbox = styled(Box)({
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  position: "absolute",
+});
+const InputField = styled(TextField)(inputStyles);
+
+const StyledButton = styled(Button)(({ theme }) => ({
+  background: "tomato",
+  color: "white",
+  "&:hover": {
+    background: "orange", // Change color on hover
+  },
+}));
+
 export default function Contacts() {
   return (
     <EmptyLayout>
-      <Box component="div">
+      <Box component="div" style={{ background: "#233", height: "100vh" }}>
         <Grid container justify="center">
-          <Box component="form">
-            <Typography variant="h5">hire or contact me...</Typography>
+          <Formbox component="form">
+            <Typography
+              variant="h5"
+              style={{
+                color: "tomato",
+                textAlight: "center",
+                textTransform: "uppercase",
+              }}
+            >
+              hire or contact me...
+            </Typography>
             <InputField
-              fullWidth={true}
+              fullWidth
               label="Name"
               variant="outlined"
               margin="dense"
               size="medium"
+              InputProps={{ style: { color: "white" } }}
             />
-            <br />
-            <InputField fullWidth={true} label="Email" variant="outlined" />
             <br />
             <InputField
-              fullWidth={true}
+              fullWidth
+              label="Email"
+              variant="outlined"
+              margin="dense"
+              size="medium"
+              InputProps={{ style: { color: "white" } }}
+            />
+            <br />
+            <InputField
+              fullWidth
               label="Company Name"
               variant="outlined"
+              margin="dense"
+              size="medium"
+              InputProps={{ style: { color: "white" } }}
             />
-          </Box>
+            <br />
+            <StyledButton variant="outlined" fullWidth endIcon={<SendIcon />}>
+              contact me
+            </StyledButton>
+          </Formbox>
         </Grid>
       </Box>
     </EmptyLayout>

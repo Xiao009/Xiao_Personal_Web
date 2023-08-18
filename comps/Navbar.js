@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image from "next/image";
+import Footer from "./Footer";
 import MobilRightMenuSlider from "@mui/material/Drawer";
 import {
   AppBar,
@@ -119,6 +120,7 @@ export default function Navbar() {
               onClose={toggleSlider("right", false)}
             >
               {sideList("right")}
+              <Footer />
             </MobilRightMenuSlider>
           </Toolbar>
         </AppBar>
