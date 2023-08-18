@@ -1,17 +1,20 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Header from "./Header";
+import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import Particles from "react-tsparticles";
+import Navbar from "./Navbar";
+import Header from "./Header";
+import Particle from "./ParticleBg";
 
 export default function Layout({ children }) {
   return (
-    <div className="content">
-      <CssBaseline />
-      <Navbar />
-      <Header />
-      <main>{children}</main>
-      {/* <Footer /> */}
-    </div>
+    <>
+      <div className="content">
+        <CssBaseline />
+        {/* <Particle /> Move Particle component here */}
+        <Navbar />
+        <Header />
+        <main>{children}</main>
+        {/* <Footer /> */}
+      </div>
+    </>
   );
 }
