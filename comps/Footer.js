@@ -49,7 +49,7 @@ export default function Footer() {
         <BottomNavigationAction
           style={{ padding: 0 }}
           icon={<Instagram />}
-          href="/https://www.instagram.com/supermic9/"
+          href="https://www.instagram.com/supermic9/"
         />
       </Bottomformat>
     </FooterContainer>
