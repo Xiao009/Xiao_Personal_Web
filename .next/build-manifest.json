@@ -17,6 +17,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/Portfolio": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Portfolio.js"
+    ],
     "/Resume": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

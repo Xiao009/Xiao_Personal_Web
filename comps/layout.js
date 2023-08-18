@@ -9,17 +9,17 @@ export default function Layout({ children }) {
   const router = useRouter();
 
   // Check if the current route matches the ones that should use the empty layout
-  const useEmptyLayout = ["/Resume"].includes(router.pathname);
+  // Add more doc on the back to change it
+  const useEmptyLayout = ["/Resume", "/Portfolio"].includes(router.pathname);
 
   return (
     <>
       <div className="content">
         <CssBaseline />
-        {/* <Particle /> Move Particle component here */}
+        <Navbar />
         {!useEmptyLayout && (
           <>
-            {/* <Particle /> */}
-            <Navbar />
+            {/* <Particle /> Move Particle component here */}
             <Header />
           </>
         )}

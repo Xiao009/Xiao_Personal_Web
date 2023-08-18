@@ -44,7 +44,7 @@ const menuItems = [
   {
     listIcon: <Apps />,
     listText: "Portfolio",
-    listPath: "/",
+    listPath: "/Portfolio",
   },
   {
     listIcon: <ContactMail />,
@@ -65,7 +65,8 @@ export default function Navbar() {
       <Avatar
         sx={{
           display: "block",
-          margin: "0.5rem auto",
+          // margin: "0.5rem ",
+          margin: 0,
           width: (theme) => theme.spacing(13),
           height: (theme) => theme.spacing(13),
           background: "#511", // Set the background color here
@@ -102,7 +103,7 @@ export default function Navbar() {
   );
   return (
     <>
-      <Box component="nav">
+      <Box>
         <AppBar position="static" style={{ background: "#222" }}>
           <Toolbar>
             <IconButton onClick={toggleSlider("right", true)}>
