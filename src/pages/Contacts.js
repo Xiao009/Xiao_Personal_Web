@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { styled, css } from "@mui/system";
 import { TextField, Typography, Grid, Box, Button } from "@mui/material";
 import EmptyLayout from "../../comps/EmptyLayout";
 import SendIcon from "@mui/icons-material/Send";
 import Particle from "../../comps/ParticleBg";
 import Navbar from "../../comps/Navbar";
+import { SettingsInputAntenna } from "@mui/icons-material";
+import { sendContactForm } from "../../comps/api";
 
 const inputStyles = css({
   "& label.Mui-focused": {
@@ -47,7 +49,48 @@ const StyledButton = styled(Button)(({ theme }) => ({
 //   zIndex: 3, // Adjust the zIndex to make it appear above the particle background
 // });
 
+const initValues = {
+  name: "",
+  email: "",
+  message: "",
+};
+
+const initState = { isLoading: false, error: "", values: initValues };
+
 export default function Contacts() {
+  const [state, setState] = useState(initState);
+  const { values, isLoading, error } = state;
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [name]: value,
+      },
+    }));
+  };
+
+  const onSubmit = async () => {
+    setState((prev) => ({
+      ...prev,
+      isLoading: true,
+    }));
+
+    try {
+      await sendContactForm(values);
+      setState(initState);
+      // Handle success, display a success message or perform any necessary actions
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        isLoading: false,
+        error: error.message,
+      }));
+    }
+  };
+
   return (
     <EmptyLayout>
       {/* <NavbarWithHigherZIndex />
@@ -72,6 +115,9 @@ export default function Contacts() {
               margin="dense"
               size="medium"
               InputProps={{ style: { color: "white" } }}
+              name="name"
+              value={values.name}
+              onChange={handleChange}
             />
             <br />
             <InputField
@@ -81,6 +127,9 @@ export default function Contacts() {
               margin="dense"
               size="medium"
               InputProps={{ style: { color: "white" } }}
+              name="email"
+              value={values.email}
+              onChange={handleChange}
             />
             <br />
             <InputField
@@ -90,12 +139,21 @@ export default function Contacts() {
               margin="dense"
               size="medium"
               multiline
-              rows={5} // Adjust the number of rows
+              rows={5}
               InputProps={{ style: { color: "white" } }}
+              name="message"
+              value={values.message}
+              onChange={handleChange}
             />
             <br />
-            <StyledButton variant="outlined" fullWidth endIcon={<SendIcon />}>
-              contact me
+            <StyledButton
+              variant="outlined"
+              fullWidth
+              endIcon={<SendIcon />}
+              disabled={isLoading}
+              onClick={onSubmit}
+            >
+              {isLoading ? "Submitting..." : "Submit"}
             </StyledButton>
           </Formbox>
         </Grid>
