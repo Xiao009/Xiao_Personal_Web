@@ -22,6 +22,7 @@ import {
   Home,
   Apps,
   ContactMail,
+  CloudDownload,
 } from "@mui/icons-material";
 import { styled } from "@mui/system"; // Import styled function from @mui/system
 //css styles
@@ -51,6 +52,11 @@ const menuItems = [
     listIcon: <ContactMail />,
     listText: "Contacts",
     listPath: "/Contacts",
+  },
+  {
+    listIcon: <CloudDownload />, // Use an appropriate icon for download
+    listText: "Download CV",
+    downloadLink: "/cv.pdf", // Specify the download link here
   },
 ];
 
@@ -92,8 +98,11 @@ export default function Navbar() {
                 color: "tan",
               },
             }}
-            component={Link}
-            href={lsItem.listPath}
+            component={lsItem.downloadLink ? "a" : Link}
+            href={lsItem.downloadLink || lsItem.listPath}
+            download={lsItem.downloadLink ? "cv.pdf" : undefined}
+            // component={Link}
+            // href={lsItem.listPath}
           >
             <ListItemIcon>{lsItem.listIcon}</ListItemIcon>
             <ListItemText primary={lsItem.listText} />

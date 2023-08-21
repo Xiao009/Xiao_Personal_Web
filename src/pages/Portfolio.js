@@ -138,6 +138,42 @@ export default function Portfolio() {
               </Card>
             </CardContainer>
           </Grid>
+          {/* Project3 */}
+          <Grid item xs={12} sm={8} md={6}>
+            <CardContainer>
+              <Card>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    alt="project1"
+                    height="140"
+                    image="/images/html-css-javascript-lg.jpg"
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h5">
+                      Project1
+                    </Typography>
+                    <Typography
+                      gutterBottom
+                      variant="body2"
+                      color="textSecondary"
+                      component="p"
+                    >
+                      Something really not right here
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+                <CardActions>
+                  <DynamicButton size="small" color="primary">
+                    Share
+                  </DynamicButton>
+                  <DynamicButton size="small" color="primary">
+                    Details
+                  </DynamicButton>
+                </CardActions>
+              </Card>
+            </CardContainer>
+          </Grid>
         </Grid>
       </Box>
     </EmptyLayout>

@@ -7,6 +7,7 @@ import Particle from "../../comps/ParticleBg";
 import Navbar from "../../comps/Navbar";
 import { SettingsInputAntenna } from "@mui/icons-material";
 import { sendContactForm } from "../../comps/api";
+import Footer from "../../comps/FooterInside";
 
 const inputStyles = css({
   "& label.Mui-focused": {
@@ -158,6 +159,7 @@ export default function Contacts() {
           </Formbox>
         </Grid>
       </Box>
+      {/* <Footer /> */}
     </EmptyLayout>
   );
 }

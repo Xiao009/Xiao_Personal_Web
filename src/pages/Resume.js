@@ -118,30 +118,98 @@ export default function Resume() {
         <CenteredTypography variant="h4">working Experience</CenteredTypography>
         <TimeLine>
           {/* Timeline content goes here */}
-          <TimeLineYear variant="h2">2013</TimeLineYear>
+          <TimeLineYear variant="h2">2018</TimeLineYear>
           <TimeLineItem>
-            <SubHeading variant="h5">Web Design</SubHeading>
+            <SubHeading variant="h5">Testing Engineer</SubHeading>
             <Typography variant="body1" style={{ color: "tomato" }}>
-              company name where worked
+              Best Buy
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "#757de8" }}>
+              Located at Shenzhen, Guangdong
             </Typography>
             <Typography variant="subtitle1" style={{ color: "tan" }}>
-              The piano sat silently in the corner of the room. Nobody could
-              remember the last time it had been played. The little girl walked
-              up to it and hit a few of the keys. The sound of the piano rang
-              throughout the house for the first time in years. In the upstairs
-              room, confined to her bed, the owner of the house had tears in her
-              eyes.
+              Assisting the TV testing, power supply and network peripheral
+              products. Seasonal business starts from summer
+            </Typography>
+            <SubHeading variant="h5">Founder</SubHeading>
+            <Typography variant="body1" style={{ color: "tomato" }}>
+              Student Storage Business
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "#757de8" }}>
+              Located at StateCollege, Guangdong
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "tan" }}>
+              Assisting the TV testing, power supply and network peripheral
+              products. Seasonal business starts from summer
             </Typography>
           </TimeLineItem>
-          <TimeLineYear variant="h2">2013 - 2018</TimeLineYear>
+          <TimeLineYear variant="h2">2019-2021</TimeLineYear>
           <TimeLineItem>
-            <SubHeading variant="h5">Web Design</SubHeading>
+            <SubHeading variant="h5">Embedded Engineer</SubHeading>
             <Typography variant="body1" style={{ color: "tomato" }}>
-              company name where worked
+              CANNON INSTRUMENT COMPANY
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "#757de8" }}>
+              Located at StateCollege, Pennsylvania
             </Typography>
             <Typography variant="subtitle1" style={{ color: "tan" }}>
-              The piano sat silently in the corner of the room. Nobody could
-              remember the last time it had been played. The little girl walked.
+              1. Investigated with team of two for Lapping Machine Project
+              including programming UI design and OOP for motor and sensor
+              control, and developing IOT which result in 24-hour automatic
+              working process that eliminate the need for continuous human
+              resource involvement{" "}
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "tan" }}>
+              2. Built an individual network system on ESP32 by using console to
+              features including DAC, wifi connection, IOA and web browser,
+              programmed FREERTOS operating system on ESP32 in order to fulfill
+              company future development feature{" "}
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "tan" }}>
+              3. Crated Motor testing Case for checking motor statues, including
+              electric design upgrade, component pick and programming for motor
+              control, PWM output, and screen display which increase the
+              development process for product with less mechanical issue (30%
+              error){" "}
+            </Typography>
+          </TimeLineItem>
+        </TimeLine>
+        <TimeLine>
+          <TimeLineYear variant="h2">2023</TimeLineYear>
+          <TimeLineItem>
+            <SubHeading variant="h5">Software Engineer</SubHeading>
+            <Typography variant="body1" style={{ color: "tomato" }}>
+              Space Neko LLC
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "#757de8" }}>
+              Remote
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "tan" }}>
+              Providing support for fortend development using next.js for a
+              vertically integrated ERP web platform targeting SMEs, using FaaS
+              (Function-as-a-Service) or PaaS (Platform-as-a-Service) as sales
+              strategies and offering a serverless pay-as-you-go model
+            </Typography>
+          </TimeLineItem>
+          <TimeLineItem>
+            <SubHeading variant="h5">Electical Enginer II</SubHeading>
+            <Typography variant="body1" style={{ color: "tomato" }}>
+              Crown Equipment Company
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "#757de8" }}>
+              Located at NewBredmen, Ohio
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "tan" }}>
+              performing engineering work requiring application of standard
+              techniques, procedures, and criteria in carrying out engineering
+              tasks. Focus will involve the development of electrical based
+              systems including electronics, electrical harness and wiring,
+              software engineering, component selection, and associated
+              electrical systems.{" "}
+            </Typography>
+            <Typography variant="subtitle1" style={{ color: "tan" }}>
+              Doing CANBUS inegration test using Oscilloscope, Making wire
+              harness with VeSys to minimize the CANBUS communication noise{" "}
             </Typography>
           </TimeLineItem>
         </TimeLine>

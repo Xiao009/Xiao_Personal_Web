@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{}"
+self.__REACT_LOADABLE_MANIFEST="{\"Portfolio.js -> @mui/material/Button\":{\"id\":\"Portfolio.js -> @mui/material/Button\",\"files\":[]}}"
