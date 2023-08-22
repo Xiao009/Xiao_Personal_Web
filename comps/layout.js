@@ -10,9 +10,12 @@ export default function Layout({ children }) {
 
   // Check if the current route matches the ones that should use the empty layout
   // Add more doc on the back to change it
-  const useEmptyLayout = ["/Resume", "/Portfolio", "/Contacts"].includes(
-    router.pathname
-  );
+  const useEmptyLayout = [
+    "/Resume",
+    "/Portfolio",
+    "/Contacts",
+    "/404",
+  ].includes(router.pathname);
 
   return (
     <>
