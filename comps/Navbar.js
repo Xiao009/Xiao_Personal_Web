@@ -23,8 +23,10 @@ import {
   Apps,
   ContactMail,
   CloudDownload,
+  Article,
 } from "@mui/icons-material";
 import { styled } from "@mui/system"; // Import styled function from @mui/system
+import { BLOCKED_PAGES } from "next/dist/shared/lib/constants";
 //css styles
 const MenuSliderContainer = styled(Box)({
   width: 300,
@@ -52,6 +54,11 @@ const menuItems = [
     listIcon: <ContactMail />,
     listText: "Contacts",
     listPath: "/Contacts",
+  },
+  {
+    listIcon: <Article />,
+    listText: "Blog",
+    listPath: "/Blog",
   },
   {
     listIcon: <CloudDownload />, // Use an appropriate icon for download

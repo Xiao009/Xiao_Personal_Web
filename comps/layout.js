@@ -15,6 +15,7 @@ export default function Layout({ children }) {
     "/Portfolio",
     "/Contacts",
     "/404",
+    "/Blog",
   ].includes(router.pathname);
 
   return (
