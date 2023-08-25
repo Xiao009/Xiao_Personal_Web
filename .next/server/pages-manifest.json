@@ -2,9 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Contacts": "pages/Contacts.js",
   "/": "pages/index.js",
-  "/Resume": "pages/Resume.js",
+  "/Blog": "pages/Blog.js",
   "/Portfolio": "pages/Portfolio.js",
-  "/Blog": "pages/Blog.js"
+  "/Contacts": "pages/Contacts.js"
 }

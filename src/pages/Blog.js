@@ -68,12 +68,12 @@ export default function Portfolio() {
             marginLeft: (theme) => theme.spacing(4), // Add margin to the left
           }}
         >
-          My Post
+          {/* My Post */}
         </Typography>
         <Typography variant="subtitle1" style={{ color: "#757de8" }}>
-          * knowledge share and personal interest *
+          {/* * knowledge share and personal interest * */}
         </Typography>
-        <TitleDivider />
+        {/* <TitleDivider /> */}
         <Grid
           container
           justify="center"
