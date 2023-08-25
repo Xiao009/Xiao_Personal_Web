@@ -22,10 +22,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/Blog.js"
     ],
+    "/Contacts": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Contacts.js"
+    ],
     "/Portfolio": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/Portfolio.js"
+    ],
+    "/Resume": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Resume.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

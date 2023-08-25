@@ -62,12 +62,16 @@ export default function Portfolio() {
         <Typography
           variant="h5"
           style={{
-            color: "white",
-            textAlign: "center",
+            color: "tomato",
+            // textAlign: "center",
             textTransform: "uppercase",
+            marginLeft: (theme) => theme.spacing(4), // Add margin to the left
           }}
         >
           My Post
+        </Typography>
+        <Typography variant="subtitle1" style={{ color: "#757de8" }}>
+          * knowledge share and personal interest *
         </Typography>
         <TitleDivider />
         <Grid
