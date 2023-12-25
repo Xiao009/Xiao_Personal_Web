@@ -45,21 +45,21 @@ const menuItems = [
     listText: "Resume",
     listPath: "/Resume",
   },
-  {
-    listIcon: <Apps />,
-    listText: "Portfolio",
-    listPath: "/Portfolio",
-  },
+  // {
+  //   listIcon: <Apps />,
+  //   listText: "Portfolio",
+  //   listPath: "/Portfolio",
+  // },
   {
     listIcon: <ContactMail />,
     listText: "Contacts",
     listPath: "/Contacts",
   },
-  {
-    listIcon: <Article />,
-    listText: "Blog",
-    listPath: "/Blog",
-  },
+  // {
+  //   listIcon: <Article />,
+  //   listText: "Blog",
+  //   listPath: "/Blog",
+  // },
   {
     listIcon: <CloudDownload />, // Use an appropriate icon for download
     listText: "Download CV",
